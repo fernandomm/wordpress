@@ -11,7 +11,8 @@ function mailrelay_wpforms_init() {
 		'mailrelay/mailrelay-wpforms',
 		array(
 			'editor_script'   => 'mailrelay-wpforms-block',
-			'render_callback' => 'mailrelay_wpforms_callback',
+			// No need to server-side render
+			// 'render_callback' => 'mailrelay_wpforms_callback',
 		)
 	);
 }
